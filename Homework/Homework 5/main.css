@@ -1,0 +1,34 @@
+body {
+  width: 900px;
+  margin: 0 auto;
+}
+.center-element {
+  margin: 0 auto;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#crew-form {
+  width: 400px;
+  margin-bottom: 1rem;
+}
+
+#crew-list {
+  width: 800px;
+  margin-top: 1.5rem;
+}
+
+#banner {
+  height: 80px;
+  margin-top: 1.5rem;
+}
+
+.title {
+  text-align: center;
+  font-weight: 200;
+}
