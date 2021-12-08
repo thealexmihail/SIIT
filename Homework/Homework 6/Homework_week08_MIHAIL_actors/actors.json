@@ -1,0 +1,26 @@
+[{
+    "id": 1,
+    "actorName": "Úrsula Corberó",
+    "characterName": "Tokio",
+    "pictureUrl": "https://m.media-amazon.com/images/M/MV5BMjBkMTc4ODctY2U1NC00NjQzLTliYTItZDM1MTkwNWNmODRjXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UY44_CR6,0,32,44_AL_.jpg"
+}, {
+    "id": 2,
+    "actorName": "Álvaro Morte",
+    "characterName": "El Profesor",
+    "pictureUrl": "https://m.media-amazon.com/images/M/MV5BZGVlMTQyODEtNTlmZS00MTg1LWEwNmYtZmRlNjFmNzg0MDNhXkEyXkFqcGdeQXVyMTA0MjU0Ng@@._V1_UX32_CR0,0,32,44_AL_.jpg"
+}, {
+    "id": 3,
+    "actorName": "Itziar Ituño",
+    "characterName": "Raquel Murillo",
+    "pictureUrl": "https://m.media-amazon.com/images/M/MV5BODMzZDNjZjUtYzlhOC00ODNhLWI4NDMtNjc0ZmE1YWNlYzQ0XkEyXkFqcGdeQXVyMTA0MjU0Ng@@._V1_UY44_CR2,0,32,44_AL_.jpg"
+}, {
+    "id": 4,
+    "actorName": "Pedro Alonso",
+    "characterName": "Berlín",
+    "pictureUrl": "https://m.media-amazon.com/images/M/MV5BNTQwOTZlOTktZWI2Ni00MGU0LTg3MDItOGFlOGZjYzVmOTYwXkEyXkFqcGdeQXVyMTA0MjU0Ng@@._V1_UY44_CR1,0,32,44_AL_.jpg"
+}, {
+    "id": 5,
+    "actorName": "Miguel Herrán",
+    "characterName": "Río",
+    "pictureUrl": "https://m.media-amazon.com/images/M/MV5BN2I0MDdiZDUtMWE2MS00OWFmLWJkZDMtMThlZmJmZDQ5MGZlXkEyXkFqcGdeQXVyMTA0MjU0Ng@@._V1_UY44_CR17,0,32,44_AL_.jpg"
+}]
