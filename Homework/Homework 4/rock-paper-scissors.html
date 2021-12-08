@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, paper, scissors</title>
+  </head>
+
+  <body>
+    <div id="game"></div>
+    <button id="play">Play game!</button>
+    <button id="resetGame">Reset game!</button>
+    <script>
+      window.addEventListener("load", function (event) {
+        var gameContent = document.getElementById("game");
+        var playGame = document.getElementById("play");
+        var allPossibilites = ["rock", "paper", "scissors"];
+        var showUserChoice = document.createElement("h1");
+        var showComputerChoice = document.createElement("h1");
+        var showGameResult = document.createElement("h1");
+        gameContent.append(showUserChoice, showComputerChoice, showGameResult);
+        var userChoice;
+        var computerChoice;
+
+        function usersChoice() {
+          var randomUserChoice = Math.floor(
+            Math.random() * allPossibilites.length
+          );
+
+          if (randomUserChoice === 1) {
+            userChoice = "rock";
+          } else if (randomUserChoice === 2) {
+            userChoice = "scissors";
+          } else {
+            userChoice = "paper";
+          }
+
+          showUserChoice.innerHTML = `User's choice is: ${userChoice}`;
+        }
+
+        function computersChoice() {
+          var randomComputerChoice = Math.floor(
+            Math.random() * allPossibilites.length
+          );
+
+          if (randomComputerChoice === 1) {
+            computerChoice = "rock";
+          } else if (randomComputerChoice === 2) {
+            computerChoice = "scissors";
+          } else {
+            computerChoice = "paper";
+          }
+
+          showComputerChoice.innerHTML = `Computer's choice is: ${computerChoice}`;
+        }
+
+        function gameResult() {
+          usersChoice();
+          computersChoice();
+          if (userChoice === computerChoice) {
+            result = "Its a draw!";
+          } else if (userChoice === "rock" && computerChoice === "paper") {
+            result = "Computer wins!";
+          } else if (userChoice === "rock" && computerChoice === "scissors") {
+            result = "User wins!";
+          } else if (userChoice === "paper" && computerChoice === "scissors") {
+            result = "Computer wins!";
+          } else if (userChoice === "paper" && computerChoice === "rock") {
+            result = "User wins!";
+          } else if (userChoice === "scissors" && computerChoice === "rock") {
+            result = "Computer wins!";
+          } else {
+            result = "User wins!";
+          }
+          showGameResult.innerHTML = result;
+        }
+
+        var play = playGame.addEventListener("click", function () {
+          gameResult();
+        });
+
+        var reset = resetGame.addEventListener("click", function () {
+          location.reload();
+        });
+      });
+    </script>
+  </body>
+</html>
