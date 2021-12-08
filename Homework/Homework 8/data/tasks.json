@@ -1,0 +1,36 @@
+[{
+    "taskName": "Maintenance",
+    "taskDescription": "Clean the house",
+    "taskStatus": "To do!",
+    "startDate": "2021-10-30",
+    "dueDate": "2021-10-30",
+    "assignedUser": "home-user"
+}, {
+    "taskName": "Reading",
+    "taskDescription": "Read Chapter 14, pgs 45 - 65",
+    "taskStatus": "In progress!",
+    "startDate": "2021-10-01",
+    "dueDate": "2021-11-01",
+    "assignedUser": "home-user"
+}, {
+    "taskName": "Learn French",
+    "taskDescription": "Read pages 3-17",
+    "taskStatus": "Done!",
+    "startDate": "2021-10-02",
+    "dueDate": "2021-10-03",
+    "assignedUser": "home-user"
+}, {
+    "taskName": "Computer Apps",
+    "taskDescription": "Create task list in Excel",
+    "taskStatus": "In progress!",
+    "startDate": "2021-10-09",
+    "dueDate": "2021-10-30",
+    "assignedUser": "home-user"
+}, {
+    "taskName": "Anniversary",
+    "taskDescription": "Dad's Birthday",
+    "taskStatus": "To do!",
+    "startDate": "2021-11-25",
+    "dueDate": "2021-11-25",
+    "assignedUser": "home-user"
+} ]
