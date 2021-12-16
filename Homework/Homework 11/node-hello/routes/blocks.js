@@ -39,6 +39,59 @@ router.post('/', (req, res) => {
 //update 
 router.put('/:id', (req, res) => {
     const { id } = req.params;
+    const description = req.body;
+    const newid = req.body;
+
+    const block = blocks.filter(block => block.id === id)[0];
+    if (!block) {
+        res.status(404).json('No block found');
+    }
+
+    const newBlock = blocks.map((block) => {
+        if (block.id === id) {
+            block.id = newid
+            block.description = description
+        }
+        return block;
+    })
+    res.status(201).json(newBlock);
+
+    // id = $.extend(id, req.body);
+    // id.save(function (err) {
+    //     if (err) {
+    //         return res.send('/:id', {
+    //             errors: err.errors,
+    //             id: id
+    //         })
+    //     } else {
+    //         res.jsonp(id);
+    //     }
+    // });
+    // const blocks = new Blocks({
+    //     id: req.body.id,
+    //     description: req.body.description
+    // });
+    // newBlock.id = req.body.id;
+    // newBlock.description = req.body.description;
+
+    // let query = { _id: req.params.id }
+
+    // console.log(newBlock);
+
+    // Blocks.findOneAndUpdate(id, blocks, function (err) {
+    //     if (err) {
+    //         console.log(err);
+    //         return;
+    //     } else {
+    //         res.status(201).json(newBlock);
+    //     }
+    // })
+
+
+    // blocks.id = id;
+    // res.json(blocks);
+    // const updatedBlock =
+    //     res.status(201).json(updatedBlock);
 
 });
 

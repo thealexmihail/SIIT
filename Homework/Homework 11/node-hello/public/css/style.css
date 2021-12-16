@@ -1,3 +1,7 @@
 #blocks li {
   list-style-type: none;
 }
+
+.fa-minus-circle {
+  color: red;
+}
