@@ -1,9 +1,8 @@
 $(document).ready(() => {
     const getLink = (block) => {
         const { id } = block;
-        return `<li id="${id}"><a href="#" data-block="${id}" id="remove" ><i  class="fas fa-minus-circle"></i></a> <a href="#" id="display-block">${id}</a></li>`
+        return `<li id="${id}" data-block="${id}"><a href="#" data-block="${id}" id="remove" ><i  class="fas fa-minus-circle"></i></a> <a href="#" id="display-block">${id}</a></li>`
     }
-
 
     $.ajax('/blocks', {
         success: (blocks) => {
@@ -57,12 +56,10 @@ $(document).ready(() => {
 
     $('#edit-block').on('click', '#update-button', (event) => {
         event.preventDefault();
+
         const form = $(this);
-        // const id = $(this).value;
-        const id = $('li').attr('id');
-        // const id = getBlockId
+        const id = $('li').attr('data-block');
         console.log(id);
-        // console.log($('#blocks').find('id').val());
         $.ajax({
             type: 'PUT',
             url: `/blocks/${id}`,

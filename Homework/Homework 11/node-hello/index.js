@@ -6,8 +6,6 @@ const blocksModule = require('./routes/blocks');
 
 const parseUrlencoded = bodyParser.urlencoded({ extended: false });
 
-
-
 app.use((req, res, next) => {
     console.log(req.query);
     next();

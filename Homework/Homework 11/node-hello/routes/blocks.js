@@ -55,44 +55,6 @@ router.put('/:id', (req, res) => {
         return block;
     })
     res.status(201).json(newBlock);
-
-    // id = $.extend(id, req.body);
-    // id.save(function (err) {
-    //     if (err) {
-    //         return res.send('/:id', {
-    //             errors: err.errors,
-    //             id: id
-    //         })
-    //     } else {
-    //         res.jsonp(id);
-    //     }
-    // });
-    // const blocks = new Blocks({
-    //     id: req.body.id,
-    //     description: req.body.description
-    // });
-    // newBlock.id = req.body.id;
-    // newBlock.description = req.body.description;
-
-    // let query = { _id: req.params.id }
-
-    // console.log(newBlock);
-
-    // Blocks.findOneAndUpdate(id, blocks, function (err) {
-    //     if (err) {
-    //         console.log(err);
-    //         return;
-    //     } else {
-    //         res.status(201).json(newBlock);
-    //     }
-    // })
-
-
-    // blocks.id = id;
-    // res.json(blocks);
-    // const updatedBlock =
-    //     res.status(201).json(updatedBlock);
-
 });
 
 //delete 
