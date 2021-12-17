@@ -1,7 +1,8 @@
 $(document).ready(() => {
     const getLink = (block) => {
         const { id } = block;
-        return `<li id="${id}" data-block="${id}"><a href="#" data-block="${id}" id="remove" ><i  class="fas fa-minus-circle"></i></a> <a href="#" id="display-block">${id}</a></li>`
+        return `<li id="${id}"><a href="#" data-block="${id}" id="remove" >
+        <i  class="fas fa-minus-circle"></i></a> <a href="#" id="display-block">${id}</a></li>`
     }
 
     $.ajax('/blocks', {
@@ -30,11 +31,12 @@ $(document).ready(() => {
     $('#blocks').on('click', 'a[data-block]', (event) => {
         event.preventDefault();
         const id = $(event.currentTarget).parent().attr('id');
+        const target = $(event.currentTarget);
         console.log(id);
         $.ajax(`/blocks/${id}`, {
             type: 'DELETE'
         }).done(() => {
-            $('#remove').closest('li').remove();
+            target.closest('li').remove();
         });
     })
 
@@ -58,7 +60,7 @@ $(document).ready(() => {
         event.preventDefault();
 
         const form = $(this);
-        const id = $('li').attr('data-block');
+        const id = $('li').attr('id');
         console.log(id);
         $.ajax({
             type: 'PUT',

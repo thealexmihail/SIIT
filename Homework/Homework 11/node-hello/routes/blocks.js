@@ -21,7 +21,6 @@ router.get('/', (req, res) => {
 // read
 router.get('/:id', (req, res) => {
     const { id } = req.params;
-    // const { type } = req.query;
     const block = blocks.filter(block => block.id === id)[0];
     if (!block) {
         res.status(404).json('No block found');
@@ -39,8 +38,8 @@ router.post('/', (req, res) => {
 //update 
 router.put('/:id', (req, res) => {
     const { id } = req.params;
-    const description = req.body;
-    const newid = req.body;
+    const newid = req.body.id;
+    const description = req.body.description;
 
     const block = blocks.filter(block => block.id === id)[0];
     if (!block) {
@@ -60,7 +59,7 @@ router.put('/:id', (req, res) => {
 //delete 
 router.delete('/:id', (req, res) => {
     const { id } = req.params;
-    const block = blocks.filter(block => block.id !== id)[0];
+    const block = blocks.filter(block => block.id === id)[0];
     blocks.splice(block, 1);
     res.status(200).json(blocks);
 });
