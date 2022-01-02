@@ -4,18 +4,6 @@ import { NavLink } from "react-router-dom";
 function Header() {
   return (
     <div className="navbar">
-      <div className="id">
-        <div className="id-content">
-          <img
-            src="./media/profilepic.jpeg"
-            width="150px"
-            height="150px"
-            alt="profile-pic"
-          />
-          <h3>Alex Mihail</h3>
-        </div>
-      </div>
-
       <div className="navlink">
         <ul>
           <li>
@@ -36,7 +24,26 @@ function Header() {
               <span>Projects</span>
             </NavLink>
           </li>
+          <li>
+            <NavLink exact to="/contact" activeClassName="navActive">
+              <i className="fas fa-address-book"></i>
+              <span>Contact</span>
+            </NavLink>
+          </li>
         </ul>
+      </div>
+
+      <div className="pic-area">
+        <div className="pic-content">
+          <img
+            src="./media/profilepic.jpeg"
+            width="150px"
+            height="150px"
+            alt="profile-pic"
+          />
+          <h2>Alexandru-Ionuț MIHAIL</h2>
+          <h3>Junior WEB Developer</h3>
+        </div>
       </div>
     </div>
   );

@@ -1,0 +1,30 @@
+.navbar {
+  background: $gradient-bar;
+  height: 100%;
+  display: flex;
+  padding: 2rem 4rem;
+  justify-content: flex-end;
+}
+
+.navlink {
+  display: block;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.pic-area {
+  height: 250px;
+  text-align: center;
+  position: relative;
+
+  img {
+    align-items: center;
+    border: 4px solid transparent;
+    border-radius: 80px;
+    background-image: linear-gradient(white, $color-bg),
+      radial-gradient(circle at top left, white, $color-bg);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    margin-bottom: 1.5rem;
+  }
+}

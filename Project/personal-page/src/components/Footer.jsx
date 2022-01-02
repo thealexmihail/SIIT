@@ -1,59 +1,78 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer className="pt-3 mt-3 bg-light">
-      <div className="socialNetwork ">
-        <ul>
-          <li>
-            <a
-              href="http://www.google.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-linkedin"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="http://www.google.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-github"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="http://www.google.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="http://www.google.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-codepen"></i>
-            </a>
-          </li>
-        </ul>
-        <div className="signature">
-          <p>by Alex Mihail 2022</p>
+    <footer className="pt-3 mt-3">
+      <div className="container-fluid container-min-max-width d-flex justify-content-between">
+        <div className="footer-group d-flex flex-column">
+          <span className="pers-page">Personal Page</span>
+          <p>
+            Bucharest Romania, <br />
+            All Rights Reserved
+          </p>
         </div>
-        <ul>
-          <li>
-            <NavLink exact to="/contact" activeClassName="navActive">
-              <i className="fas fa-address-book"></i>
-              <span>Contact</span>
-            </NavLink>
-          </li>
-        </ul>
+        <div className="social-network footer-group">
+          <h3 className="h5">Find me on</h3>
+          <ul>
+            <li>
+              <a
+                href="http://www.google.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-linkedin-in"></i>
+                <span>LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://www.google.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-github"></i>
+                <span>GitHub</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://www.google.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-slack"></i>
+                <span>Slack</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div className="footer-group d-flex flex-column">
+          <h3 className="h5">Links</h3>
+          <a
+            href="http://www.google.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Terms and Conditions
+          </a>
+          <a
+            href="http://www.google.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Privacy Policy
+          </a>
+          <a
+            href="http://www.google.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            About
+          </a>
+        </div>
+      </div>
+      <div className="text-center py-3">
+        &copy; 2022 Personal page by Alexandru-Ionuț Mihail
       </div>
     </footer>
   );
