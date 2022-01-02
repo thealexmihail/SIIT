@@ -1,0 +1,19 @@
+.navbar {
+  background: $lightGray;
+  height: 100%;
+  //   min-height: $minHeight;
+  min-width: 264px;
+}
+
+.id {
+  width: 200px;
+  height: 200px;
+
+  img {
+    border-radius: 50%;
+  }
+}
+
+.navlink {
+  display: block;
+}
