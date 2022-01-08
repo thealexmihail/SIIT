@@ -1,0 +1,52 @@
+.home {
+  padding: 1rem 2rem;
+  display: flex;
+
+  .home-content {
+    display: flex;
+    padding: 1rem 2rem;
+    background: $gradient-content;
+
+    .content {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      margin-right: 5rem;
+    }
+    .content h1 {
+      font-family: $montserrat-font;
+      font-weight: 800;
+      font-size: 3.3rem;
+      line-height: 4rem;
+      letter-spacing: -0.04em;
+    }
+
+    .content p {
+      font-style: normal;
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 27px;
+      color: $color-text;
+      margin-top: 1.5rem;
+    }
+
+    .home-img {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .home-img img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .home-content {
+    flex-direction: column;
+  }
+}

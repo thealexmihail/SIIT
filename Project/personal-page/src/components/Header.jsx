@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Logo from "../assets/images/profilepic.jpeg";
 
 function Header() {
   return (
@@ -35,12 +36,7 @@ function Header() {
 
       <div className="pic-area">
         <div className="pic-content">
-          <img
-            src="./media/profilepic.jpeg"
-            width="150px"
-            height="150px"
-            alt="profile-pic"
-          />
+          <img src={Logo} width="150px" height="150px" alt="profile-pic" />
           <h2>Alexandru-Ionuț MIHAIL</h2>
           <h3>Junior WEB Developer</h3>
         </div>
