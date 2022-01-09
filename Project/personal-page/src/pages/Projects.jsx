@@ -1,11 +1,14 @@
 import React from "react";
 import Layout from "../components/Layout";
+import ProjectList from "../components/projects/ProjectList";
 
 function Projects() {
   return (
     <div>
       <Layout>
-        <h1>Hello from projects!</h1>
+        <div className="all-projects">
+          <ProjectList />
+        </div>
       </Layout>
     </div>
   );

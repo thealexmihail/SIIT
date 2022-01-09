@@ -5,11 +5,14 @@ $montserrat-font: "Montserrat", sans-serif;
 
 $white: #fff;
 $black: #000;
+$red: #bf432a;
 $color-text: #81afdd;
+$color-text-2: #cfd8e0;
 $color-bg: #040c18;
 $color-footer: #031b34;
 $gradient-bar: linear-gradient(103.22deg, #052e5a -13.86%, #040c18 99.55%);
-$gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+$gradient-text: linear-gradient(20deg, #7dadff 2%, #ff654d 100%);
+$gradient-text-2: linear-gradient(20deg, #c187a1 2%, #ff654d 100%);
 $gradient-content: radial-gradient(
   circle at 30% -100%,
   #042c54 25%,
@@ -44,8 +47,20 @@ a {
   cursor: pointer;
 }
 
+li {
+  list-style-type: none;
+}
+
 .gradient-text {
   background: $gradient-text;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-background-clop: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-roles {
+  background: $gradient-text-2;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-background-clop: text;
