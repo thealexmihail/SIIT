@@ -6,12 +6,14 @@ class ProjectList extends Component {
   state = {
     projects: projectData,
     radios: [
-      { id: 1, value: "javascript" },
+      { id: 1, value: "html" },
       { id: 2, value: "css" },
-      { id: 3, value: "react" },
-      { id: 4, value: "php" },
+      { id: 3, value: "bootstrap" },
+      { id: 4, value: "javascript" },
+      { id: 5, value: "react" },
+      { id: 6, value: "php" },
     ],
-    selectedRadio: "javascript",
+    selectedRadio: "html",
   };
 
   handleRadio = (event) => {
@@ -24,6 +26,9 @@ class ProjectList extends Component {
 
     return (
       <div className="project-content">
+        <div className="radio-name gradient-text">
+          Filter projects by the following technologies
+        </div>
         <ul className="radio-display">
           {radios.map((radio) => {
             return (

@@ -1,0 +1,163 @@
+.all-projects {
+  .project-content {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem;
+    justify-content: center;
+    align-items: center;
+
+    .radio-name {
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.5rem;
+      margin: 1rem 2rem;
+    }
+
+    .radio-display {
+      display: flex;
+      width: 80%;
+      user-select: none;
+
+      li {
+        flex: 1;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.1rem;
+        text-align: center;
+        text-transform: uppercase;
+
+        input[type="radio"] {
+          visibility: hidden;
+          position: relative;
+        }
+        input:checked:after {
+          font-size: 24px;
+        }
+        input:checked + label {
+          color: #81afdd;
+          font-size: 24px;
+        }
+        label {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .projects {
+      display: flex;
+
+      .project {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: $gradient-content;
+        padding: 1rem 2rem;
+        margin: 2rem 1rem;
+
+        .icons {
+          font-size: 3rem;
+          width: 60%;
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 1rem;
+        }
+
+        h3 {
+          font-family: $montserrat-font;
+          font-size: 1.5rem;
+        }
+      }
+      .project img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .infos {
+        cursor: pointer;
+        font-size: 1.3rem;
+        font-weight: 600;
+        transition: 0.2s;
+        margin-top: 1rem;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+
+      .show-infos {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: -27rem;
+        right: 0;
+        background: rgba(0, 0, 0, 0.8);
+        animation: popup 0.3s ease forwards;
+        transform-origin: center;
+
+        .info-content {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          top: 45%;
+          width: 550px;
+          margin: 0 auto;
+          background: $gradient-text;
+          border-radius: 10px;
+          padding: 2rem;
+          -moz-box-shadow: 0 0 10px rgb(155, 179, 196);
+          -webkit-box-shadow: 0 0 10px rgb(155, 179, 196);
+          box-shadow: 0 0 10px rgb(155, 179, 196);
+          animation: popup 0.6s ease forwards;
+          transform: scale(0);
+          transform-origin: center;
+
+          @keyframes popup {
+            to {
+              transform: scale(1);
+            }
+          }
+          .head {
+            text-align: center;
+          }
+          .text {
+            text-align: justify;
+            padding: 1rem 0;
+          }
+          .button:hover {
+            background: #159baf;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .project-content {
+    .radio-display {
+      flex-direction: column;
+      padding: 0 0;
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        padding: 0;
+      }
+    }
+    .projects {
+      flex-direction: column;
+
+      .project {
+        .show-infos {
+          bottom: -1650px;
+          .info-content {
+            width: 300px;
+          }
+        }
+      }
+    }
+  }
+}

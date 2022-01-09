@@ -16,15 +16,15 @@ class Project extends Component {
 
     return (
       <div className="project">
-        <div className="icons">
+        <div className="icons gradient-text">
           {languagesIcons.map((icon) => (
             <i className={icon} key={icon}></i>
           ))}
         </div>
-        <h3>{name}</h3>
+        <h3 className="gradient-text">{name}</h3>
         <img src={picture} alt="" onClick={this.handleInfo} />
         <span className="infos" onClick={this.handleInfo}>
-          <i className="fas fa-plus-circle"></i>
+          Show more
         </span>
 
         {this.state.showInfo && (
@@ -36,19 +36,17 @@ class Project extends Component {
                   <a
                     href={source}
                     rel="noopener noreferrer"
-                    className="button"
+                    className="button btn btn-info"
                     target="_blank"
                   >
-                    Source code
+                    View on GitHub
                   </a>
                 </div>
               </div>
-            </div>
-
-            <p className="text">{info}</p>
-
-            <div className="button return" onClick={this.handleInfo}>
-              Return to the page
+              <p className="text">{info}</p>
+              <div className="btn btn-danger" onClick={this.handleInfo}>
+                Return to the page
+              </div>
             </div>
           </div>
         )}
