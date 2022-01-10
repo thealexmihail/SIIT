@@ -1,20 +1,23 @@
-import React, { Component } from "react";
+import React from "react";
 import { projectData } from "../../data/projectData";
 import Project from "../projects/Project";
 
-class ProjectList extends Component {
-  state = {
-    projects: projectData,
-    radios: [
-      { id: 1, value: "html" },
-      { id: 2, value: "css" },
-      { id: 3, value: "bootstrap" },
-      { id: 4, value: "javascript" },
-      { id: 5, value: "react" },
-      { id: 6, value: "php" },
-    ],
-    selectedRadio: "html",
-  };
+class ProjectList extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      projects: projectData,
+      radios: [
+        { id: 1, value: "html" },
+        { id: 2, value: "css" },
+        { id: 3, value: "bootstrap" },
+        { id: 4, value: "javascript" },
+        { id: 5, value: "react" },
+        { id: 6, value: "php" },
+      ],
+      selectedRadio: "html",
+    };
+  }
 
   handleRadio = (event) => {
     let radio = event.target.value;

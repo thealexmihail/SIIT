@@ -1,9 +1,12 @@
-import React, { Component } from "react";
+import React from "react";
 
-class Project extends Component {
-  state = {
-    showInfo: false,
-  };
+class Project extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      showInfo: false,
+    };
+  }
 
   handleInfo = () => {
     this.setState({

@@ -14,7 +14,7 @@
 
     .radio-display {
       display: flex;
-      width: 80%;
+      width: 90%;
       user-select: none;
 
       li {
@@ -29,11 +29,11 @@
           position: relative;
         }
         input:checked:after {
-          font-size: 24px;
+          font-size: 1.2rem;
         }
         input:checked + label {
           color: #81afdd;
-          font-size: 24px;
+          font-size: 1.2rem;
         }
         label {
           cursor: pointer;
@@ -56,7 +56,7 @@
 
         .icons {
           font-size: 3rem;
-          width: 60%;
+          width: 100%;
           display: flex;
           justify-content: space-between;
           margin-bottom: 1rem;
@@ -73,11 +73,12 @@
       }
 
       .infos {
-        cursor: pointer;
+        font-family: "Montserrat", sans-serif;
         font-size: 1.3rem;
         font-weight: 600;
         transition: 0.2s;
         margin-top: 1rem;
+        cursor: pointer;
 
         &:hover {
           transform: scale(1.1);

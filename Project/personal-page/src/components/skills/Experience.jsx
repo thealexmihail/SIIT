@@ -9,7 +9,7 @@ function Experience() {
           Mechanical Design Engineer, SEIMAF Groupe, Bucharest
         </p>
         <p className="period">APRIL 2019 - PRESENT</p>
-        <p className="experience-description">
+        <div className="experience-description">
           Responsibilities:
           <ul>
             <li>Project management for assigned platform projects;</li>
@@ -28,7 +28,7 @@ function Experience() {
           </ul>
           Delegated in the South of France for 1 and a half year to work on ITER
           site in a multicultural environment.
-        </p>
+        </div>
       </div>
       <div className="experience-1">
         <p className="role-title gradient-text-roles">
@@ -36,7 +36,7 @@ function Experience() {
           Roumanie, Bucharest
         </p>
         <p className="period">MAY 2018 - APRIL 2019</p>
-        <p className="experience-description">
+        <div className="experience-description">
           Responsibilities:
           <ul>
             <li>
@@ -57,7 +57,7 @@ function Experience() {
               management;
             </li>
           </ul>
-        </p>
+        </div>
       </div>
       <h3 className="gradient-text">Education</h3>
       <div className="experience-1">
@@ -65,7 +65,7 @@ function Experience() {
           Doctor of Engineering, University Politehnica of Bucharest, Bucharest
         </p>
         <p className="period">OCTOBER 2020 - PRESENT</p>
-        <p className="experience-description">
+        <div className="experience-description">
           Field of study: Industrial Engineering.
           <ul>
             <li>
@@ -73,14 +73,14 @@ function Experience() {
               nuclear resistance testing of the support type parts.
             </li>
           </ul>
-        </p>
+        </div>
       </div>
       <div className="experience-1">
         <p className="role-title gradient-text-roles">
           Master's Degree, University Politehnica of Bucharest, Bucharest
         </p>
         <p className="period">OCTOBER 2018 - JUNE 2020</p>
-        <p className="experience-description">
+        <div className="experience-description">
           Field of study: Industrial Engineering.
           <ul>
             <li>
@@ -89,14 +89,14 @@ function Experience() {
               Management etc.).
             </li>
           </ul>
-        </p>
+        </div>
       </div>
       <div className="experience-1">
         <p className="role-title gradient-text-roles">
           Bachelor's Degree, University Politehnica of Bucharest, Bucharest
         </p>
         <p className="period">OCTOBER 2014 - JULY 2018</p>
-        <p className="experience-description">
+        <div className="experience-description">
           Field of study: Industrial Engineering.
           <ul>
             <li>
@@ -111,7 +111,7 @@ function Experience() {
             <li>Mathematics</li>
             <li>Strength of Materials</li>
           </ul>
-        </p>
+        </div>
       </div>
     </div>
   );
