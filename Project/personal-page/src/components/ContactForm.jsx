@@ -2,8 +2,8 @@ import React from "react";
 import emailjs from "emailjs-com";
 
 class ContactForm extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       fields: { name: "", email: "", subject: "", message: "" },
       errors: {},
@@ -33,6 +33,7 @@ class ContactForm extends React.Component {
       const msg = "Your message has been send.";
       let successMsg = document.getElementById("successMsg");
       successMsg.innerText = msg;
+
       emailjs.sendForm(
         "gmail",
         "template_6hwj1c8",

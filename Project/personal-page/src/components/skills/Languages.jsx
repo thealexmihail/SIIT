@@ -2,8 +2,8 @@ import React from "react";
 import ProgressBar from "./ProgressBar";
 
 class Languages extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       languages: [
         { id: 1, value: "HTML", experience: 1 },
@@ -28,7 +28,7 @@ class Languages extends React.Component {
         <ProgressBar
           languages={languages}
           classname="display-languages"
-          title="programming languages"
+          title="programming technologies"
         />
         <ProgressBar
           languages={frameworks}

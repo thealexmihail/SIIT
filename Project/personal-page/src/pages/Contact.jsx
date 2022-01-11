@@ -9,7 +9,7 @@ function Contact() {
         <div className="contact-layout">
           <div className="contact-details">
             <h3 className="gradient-text">Contact me</h3>
-            <i class="fas fa-map-marker-alt"></i>
+            <i className="fas fa-map-marker-alt"></i>
             <div className="phone-mail-area">
               <div>
                 <a href="mailto:alex.mihail04@gmail.com">
