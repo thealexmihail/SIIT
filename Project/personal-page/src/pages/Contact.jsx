@@ -6,7 +6,23 @@ function Contact() {
   return (
     <div>
       <Layout>
-        <div className="form-layout">
+        <div className="contact-layout">
+          <div className="contact-details">
+            <h3 className="gradient-text">Contact me</h3>
+            <i class="fas fa-map-marker-alt"></i>
+            <div className="phone-mail-area">
+              <div>
+                <a href="mailto:alex.mihail04@gmail.com">
+                  alex.mihail04@gmail.com
+                </a>
+              </div>
+              Phone number:
+              <span> +40767613284</span>
+            </div>
+            <div className="message-area">
+              ...or simply fill in the form below:
+            </div>
+          </div>
           <ContactForm />
         </div>
       </Layout>

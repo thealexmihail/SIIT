@@ -30,21 +30,15 @@ class ContactForm extends React.Component {
       fields["subject"] = "";
       fields["message"] = "";
       this.setState({ fields: fields });
-      // alert("Form submitted");
+      const msg = "Your message has been send.";
+      let successMsg = document.getElementById("successMsg");
+      successMsg.innerText = msg;
       emailjs.sendForm(
         "gmail",
         "template_6hwj1c8",
         e.target,
         "user_cNO0qdMGnxFqAVFmbS3Et"
       );
-      // .then(
-      //   (result) => {
-      //     console.log(result.text);
-      //   },
-      //   (error) => {
-      //     console.log(error.text);
-      //   }
-      // );
       e.target.reset();
     }
   }
@@ -115,7 +109,7 @@ class ContactForm extends React.Component {
   render() {
     return (
       <div className="contact-form">
-        <h3>Contact form</h3>
+        <h3 className="gradient-text">Contact form</h3>
         <form name="userContactForm" onSubmit={this.submitContactForm}>
           <div className="col-8 form-group mx-auto">
             <label>Name</label>
@@ -162,10 +156,10 @@ class ContactForm extends React.Component {
             ></textarea>
             <span className="errorMsg">{this.state.errors.message}</span>
           </div>
+          <div id="successMsg" className="col-8 pt-3 mx-auto"></div>
           <div className="col-8 pt-3 mx-auto">
             <input type="submit" className="btn btn-info" value="Send" />
           </div>
-          <div className="successMsg">{this.state.success}</div>
         </form>
       </div>
     );

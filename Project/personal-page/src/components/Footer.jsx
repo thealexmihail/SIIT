@@ -16,7 +16,7 @@ function Footer() {
           <ul>
             <li>
               <a
-                href="http://www.google.com"
+                href="https://www.linkedin.com/in/alexandru-ionu%C8%9B-mihail-47bb57140/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -26,7 +26,7 @@ function Footer() {
             </li>
             <li>
               <a
-                href="http://www.google.com"
+                href="https://github.com/thealexmihail"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -36,7 +36,7 @@ function Footer() {
             </li>
             <li>
               <a
-                href="http://www.google.com"
+                href="https://join.slack.com/t/cv-pageworkspace/shared_invite/zt-11ek9yj8m-JB4uNLMMi9QrNRtpZPD0Gg"
                 target="_blank"
                 rel="noopener noreferrer"
               >

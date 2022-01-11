@@ -1,0 +1,24 @@
+.contact-details {
+  background: $gradient-content;
+  margin: 1rem 2rem;
+  text-align: center;
+
+  h3 {
+    padding: 1rem 2rem;
+    font-family: $montserrat-font;
+    font-size: 1.7rem;
+  }
+
+  i {
+    font-size: 2rem;
+  }
+
+  .phone-mail-area {
+    font-weight: 700;
+  }
+
+  .message-area {
+    font-family: $montserrat-font;
+    padding: 2rem 0;
+  }
+}

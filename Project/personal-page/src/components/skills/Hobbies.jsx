@@ -7,11 +7,11 @@ function Hobbies() {
       <ul>
         <li>
           <i className="fas fa-check-square"></i>
-          <span>Reading</span>
+          <span>Listening to music</span>
         </li>
         <li>
           <i className="fas fa-check-square"></i>
-          <span>Reading</span>
+          <span>Travelling</span>
         </li>
         <li>
           <i className="fas fa-check-square"></i>

@@ -12,25 +12,25 @@ function SoftSkills() {
           </li>
           <li>
             <i className="fas fa-check-square"></i>
-            <span>English</span>
+            <span>French</span>
           </li>
           <li>
             <i className="fas fa-check-square"></i>
-            <span>English</span>
+            <span>Romanian</span>
           </li>
         </ul>
         <ul>
           <li>
             <i className="fas fa-check-square"></i>
-            <span>English</span>
+            <span>Office</span>
           </li>
           <li>
             <i className="fas fa-check-square"></i>
-            <span>English</span>
+            <span>Management</span>
           </li>
           <li>
             <i className="fas fa-check-square"></i>
-            <span>English</span>
+            <span>Engineering</span>
           </li>
         </ul>
       </div>
