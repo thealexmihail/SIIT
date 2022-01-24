@@ -1,6 +1,8 @@
 .contact-form {
   background: $gradient-content;
   margin: 1rem 2rem;
+  padding-bottom: 2rem;
+
   h3 {
     text-align: center;
     padding: 1rem 2rem;
@@ -8,23 +10,22 @@
     font-size: 1.7rem;
   }
 
-  form {
-    padding-bottom: 2rem;
-    #successMsg {
-      font-size: 1.3rem;
-      color: #35aa06;
-      font-weight: 700;
-    }
-  }
-
-  form > div > label {
+  label {
     font-weight: 700;
     font-size: 1.1rem;
+  }
+
+  .successMsg {
+    font-family: $montserrat-font;
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: #35aa06;
   }
 
   .errorMsg {
+    font-family: $montserrat-font;
     font-size: 1.1rem;
-    color: #d10442;
-    font-weight: 700;
+    font-weight: 900;
+    color: #ff1616;
   }
 }
