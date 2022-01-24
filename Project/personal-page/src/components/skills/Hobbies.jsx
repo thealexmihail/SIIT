@@ -17,6 +17,10 @@ function Hobbies() {
           <i className="fas fa-check-square"></i>
           <span>Reading</span>
         </li>
+        <li>
+          <i className="fas fa-check-square"></i>
+          <span>Hiking</span>
+        </li>
       </ul>
     </div>
   );

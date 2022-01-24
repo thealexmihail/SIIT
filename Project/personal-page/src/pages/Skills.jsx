@@ -4,6 +4,7 @@ import Experience from "../components/skills/Experience";
 import Hobbies from "../components/skills/Hobbies";
 import Languages from "../components/skills/Languages";
 import SoftSkills from "../components/skills/SoftSkills";
+import SpokenLanguages from "../components/skills/SpokenLanguages";
 
 function Skills() {
   return (
@@ -17,6 +18,7 @@ function Skills() {
             </div>
             <div className="skills-container-2">
               <SoftSkills />
+              <SpokenLanguages />
               <Hobbies />
             </div>
           </div>

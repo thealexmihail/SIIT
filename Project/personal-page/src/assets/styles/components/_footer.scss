@@ -31,6 +31,7 @@ footer {
 @media (max-width: 768px) {
   footer > div {
     flex-direction: column;
+    text-align: center;
   }
 
   footer .footer-group {
