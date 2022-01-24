@@ -32,6 +32,7 @@ class Project extends React.Component {
 
         {this.state.showInfo && (
           <div className="show-infos">
+            <div className="info-overlay"></div>
             <div className="info-content">
               <div className="head">
                 <h2>{name}</h2>

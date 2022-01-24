@@ -14,6 +14,7 @@ class ProjectList extends React.Component {
         { id: 4, value: "javascript" },
         { id: 5, value: "react" },
         { id: 6, value: "php" },
+        { id: 7, value: "angular" },
       ],
       selectedRadio: "html",
     };
