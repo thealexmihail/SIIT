@@ -14,13 +14,15 @@
       align-items: flex-start;
       flex-direction: column;
       margin-right: 5rem;
-    }
-    .content h1 {
-      font-family: $montserrat-font;
-      font-weight: 800;
-      font-size: 3.3rem;
-      line-height: 4rem;
-      letter-spacing: -0.04em;
+
+      h1 {
+        font-family: $montserrat-font;
+        font-weight: 800;
+        font-size: 3.3rem;
+        line-height: 4rem;
+        letter-spacing: -0.04em;
+        text-transform: uppercase;
+      }
     }
 
     .content p {
@@ -51,6 +53,18 @@
       flex-direction: column;
       .content {
         margin-right: 0;
+
+        h1 {
+          font-size: 1.7rem;
+          line-height: 3rem;
+          text-align: center;
+          text-transform: uppercase;
+        }
+
+        p {
+          text-align: justify;
+          font-size: 1.2rem;
+        }
       }
     }
   }

@@ -9,7 +9,6 @@
 
 .navlink {
   display: block;
-  // flex-wrap: wrap;
   width: 100%;
 }
 
@@ -71,6 +70,7 @@
       flex-direction: column;
       margin: auto;
       padding-left: 0;
+      margin-bottom: 1rem;
     }
   }
 }

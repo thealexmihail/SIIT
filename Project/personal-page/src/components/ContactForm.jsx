@@ -102,7 +102,7 @@ class ContactForm extends React.Component {
     return (
       <div className="contact-form">
         <h3 className="gradient-text">Contact form</h3>
-        <form name="userContactForm" onSubmit={this.submitContactForm}>
+        <form className="user-contact-form" onSubmit={this.submitContactForm}>
           <div className="col-8 form-group mx-auto">
             <label>Name</label>
             <input
@@ -112,7 +112,7 @@ class ContactForm extends React.Component {
               value={this.state.fields.name}
               onChange={this.handleChange}
             />
-            <span className="errorMsg">{this.state.errors.name}</span>
+            <span className="error-msg">{this.state.errors.name}</span>
           </div>
           <div className="col-8 form-group pt-2 mx-auto">
             <label>Email:</label>
@@ -123,7 +123,7 @@ class ContactForm extends React.Component {
               value={this.state.fields.email}
               onChange={this.handleChange}
             />
-            <span className="errorMsg">{this.state.errors.email}</span>
+            <span className="error-msg">{this.state.errors.email}</span>
           </div>
           <div className="col-8 form-group pt-2 mx-auto">
             <label>Subject:</label>
@@ -134,7 +134,7 @@ class ContactForm extends React.Component {
               value={this.state.fields.subject}
               onChange={this.handleChange}
             />
-            <span className="errorMsg">{this.state.errors.subject}</span>
+            <span className="error-msg">{this.state.errors.subject}</span>
           </div>
           <div className="col-8 form-group pt-2 mx-auto">
             <label>Message</label>
@@ -146,10 +146,10 @@ class ContactForm extends React.Component {
               value={this.state.fields.message}
               onChange={this.handleChange}
             ></textarea>
-            <span className="errorMsg">{this.state.errors.message}</span>
+            <span className="error-msg">{this.state.errors.message}</span>
           </div>
           <div className="col-8 pt-3 mx-auto">
-            <span className="successMsg">{this.state.message}</span>
+            <span className="success-msg">{this.state.message}</span>
           </div>
           <div className="col-8 pt-3 mx-auto">
             <input type="submit" className="btn btn-info" value="Send" />
