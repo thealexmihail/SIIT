@@ -1,5 +1,6 @@
 import React from "react";
 import ProgressBar from "./ProgressBar";
+import SkillsPic from "../../assets/images/skills.png";
 
 class Languages extends React.Component {
   constructor(props) {
@@ -35,6 +36,9 @@ class Languages extends React.Component {
           className="display-frameworks"
           title="frameworks &amp; libraries"
         />
+        <div className="skills-img">
+          <img src={SkillsPic} alt="Skills img!" />
+        </div>
       </div>
     );
   }

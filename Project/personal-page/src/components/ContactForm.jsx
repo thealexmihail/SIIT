@@ -151,7 +151,7 @@ class ContactForm extends React.Component {
           <div className="col-8 pt-3 mx-auto">
             <span className="success-msg">{this.state.message}</span>
           </div>
-          <div className="col-8 pt-3 mx-auto">
+          <div className="col-8 pt-3 mx-auto text-center">
             <input type="submit" className="btn btn-info" value="Send" />
           </div>
         </form>

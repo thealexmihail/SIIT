@@ -4,15 +4,13 @@ import { useEffect, useState } from "react";
 function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
 
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 300) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
-    });
-  }, []);
+  const toggleVisibilty = () => {
+    if (window.pageYOffset > 300) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
 
   const scrollUp = () => {
     window.scrollTo({
@@ -20,6 +18,14 @@ function ScrollToTop() {
       behavior: "smooth",
     });
   };
+
+  useEffect(() => {
+    window.addEventListener("scroll", toggleVisibilty);
+
+    return () => {
+      window.removeEventListener("scroll", toggleVisibilty);
+    };
+  }, []);
 
   return (
     <div className="scroll-button">
@@ -29,7 +35,7 @@ function ScrollToTop() {
           className="btn btn-primary  btn-floating  btn-lg btn-back-to-top"
           onClick={scrollUp}
         >
-          <i class="fas fa-angle-up angle-icon"></i>
+          <i className="fas fa-angle-up angle-icon"></i>
         </button>
       )}
     </div>

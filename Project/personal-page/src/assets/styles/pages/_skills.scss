@@ -124,13 +124,17 @@
           font-size: 1.1rem;
           font-weight: 700;
         }
+
+        .skills-img img {
+          width: 100%;
+        }
       }
     }
 
     .skills-container-2 {
       display: flex;
       justify-content: space-between;
-      background: $gradient-content;
+      // background: $gradient-content;
       padding: 1rem 2rem;
 
       .other-skills,
@@ -138,6 +142,7 @@
       .hobbies {
         width: 100%;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         font-size: 1.1rem;

@@ -2,6 +2,7 @@
   background: $gradient-content;
   margin: 1rem 2rem;
   padding-bottom: 2rem;
+  margin-top: 2rem;
 
   h3 {
     text-align: center;
@@ -10,9 +11,17 @@
     font-size: 1.7rem;
   }
 
+  // .form-control {
+  //   background-color: $color-bg;
+  //   border: 0.1rem solid #b191b8;
+  // }
+
   label {
+    font-family: $poppins-font;
     font-weight: 700;
     font-size: 1.1rem;
+    color: #b191b8;
+    margin-bottom: 0.2rem;
   }
 
   .success-msg {
@@ -27,5 +36,16 @@
     font-size: 1.1rem;
     font-weight: 900;
     color: #ff1616;
+  }
+
+  .btn {
+    background-color: $orange-red;
+    border: 0;
+    color: $white;
+    font-weight: 800;
+
+    &:hover {
+      background-color: #f9654d;
+    }
   }
 }
