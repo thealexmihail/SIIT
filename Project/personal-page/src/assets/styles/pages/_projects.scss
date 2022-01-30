@@ -185,25 +185,34 @@
 }
 
 @media (max-width: 768px) {
-  .project-content {
-    .radio-display {
-      flex-direction: column;
-      padding: 0 0;
-      ul {
-        margin: 0;
-        padding: 0;
+  .all-projects {
+    .project-content {
+      .radio-display {
+        flex-direction: column;
+        padding: 0 0;
+        ul {
+          margin: 0;
+          padding: 0;
+        }
+        li {
+          padding: 0;
+        }
       }
-      li {
-        padding: 0;
-      }
-    }
-    .projects {
-      flex-direction: column;
+      .projects {
+        flex-direction: column;
 
-      .project {
-        .show-infos {
-          .info-content {
-            width: 300px;
+        .project {
+          .icons {
+            font-size: 2rem;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin: 1rem 0;
+          }
+          .show-infos {
+            .info-content {
+              width: 300px;
+            }
           }
         }
       }
