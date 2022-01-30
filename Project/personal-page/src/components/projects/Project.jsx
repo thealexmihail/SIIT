@@ -40,7 +40,7 @@ class Project extends React.Component {
                   <a
                     href={source}
                     rel="noopener noreferrer"
-                    className="button btn btn-info"
+                    className="btn btn-info"
                     target="_blank"
                   >
                     View on GitHub

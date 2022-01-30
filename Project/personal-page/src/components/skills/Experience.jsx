@@ -18,8 +18,8 @@ function Experience() {
               progress;
             </li>
             <li>
-              Working on multiple projects at the same
-              time(ITER,Renault,LABSingapore, SUEZ etc.);
+              Working on multiple projects at the same time(ITER, Renault, LAB
+              Singapore, SUEZ etc.);
             </li>
             <li>
               Training new colleagues that joined the projects (2D, 3D,

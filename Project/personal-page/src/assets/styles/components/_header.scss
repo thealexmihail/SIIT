@@ -5,60 +5,59 @@
   padding: 2rem 4rem;
   justify-content: flex-end;
   margin-bottom: 1rem;
-}
 
-.navlink {
-  display: block;
-  width: 100%;
-}
+  .navlink {
+    display: block;
+    width: 100%;
 
-.navlink li {
-  list-style-type: none;
-  display: inline-block;
-  margin-right: 2rem;
-  font-size: 18px;
-  font-weight: 700;
+    li {
+      list-style-type: none;
+      display: inline-block;
+      margin-right: 2rem;
+      font-size: 18px;
+      font-weight: 700;
 
-  &:hover i {
-    transform: translate(3px, 3px);
-  }
+      &:hover i {
+        transform: translate(3px, 3px);
+      }
+    }
 
-  .navActive {
-    // color: $lightGray;
-    color: $color-text;
+    .navActive {
+      color: $lightGray;
+
+      i {
+        color: $lightGray;
+      }
+    }
 
     i {
-      color: $color-text;
+      position: absolute;
+      font-size: 0.95rem;
+      transform: translateY(3px);
+      transition: 0.2s ease;
+      color: $orange-red;
+    }
+
+    span {
+      margin-left: 2.7rem;
     }
   }
 
-  i {
-    position: absolute;
-    font-size: 0.95rem;
-    transform: translateY(3px);
-    transition: 0.2s ease;
-    color: $orange-red;
-  }
+  .pic-area {
+    height: 250px;
+    text-align: center;
+    position: relative;
 
-  span {
-    margin-left: 2.7rem;
-  }
-}
-
-.pic-area {
-  height: 250px;
-  text-align: center;
-  position: relative;
-
-  img {
-    align-items: center;
-    border: 4px solid transparent;
-    border-radius: 80px;
-    background-image: linear-gradient($orange-red, $orange-red),
-      radial-gradient(circle at top left, $orange-red, $orange-red);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    margin-bottom: 1.5rem;
+    img {
+      align-items: center;
+      border: 4px solid transparent;
+      border-radius: 80px;
+      background-image: linear-gradient($orange-red, $orange-red),
+        radial-gradient(circle at top left, $orange-red, $orange-red);
+      background-origin: border-box;
+      background-clip: content-box, border-box;
+      margin-bottom: 1.5rem;
+    }
   }
 }
 

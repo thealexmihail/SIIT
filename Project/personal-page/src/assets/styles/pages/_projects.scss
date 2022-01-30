@@ -44,6 +44,11 @@
         label {
           cursor: pointer;
         }
+
+        &:hover {
+          transform: translateY(3px);
+          transition: 0.5s ease;
+        }
       }
     }
 
@@ -135,6 +140,26 @@
           transform-origin: center;
           z-index: 5000;
 
+          .btn-danger {
+            background-color: $orange-red;
+            border: 0;
+            color: $white;
+            font-weight: 800;
+            &:hover {
+              background-color: #f9654d;
+            }
+          }
+
+          .btn-info {
+            background-color: #1858a4;
+            border: 0;
+            color: $white;
+            font-weight: 800;
+            &:hover {
+              background-color: #082c54;
+            }
+          }
+
           @keyframes popup {
             to {
               transform: scale(1);
@@ -142,13 +167,16 @@
           }
           .head {
             text-align: center;
+
+            h2 {
+              text-transform: uppercase;
+              font-family: $montserrat-font;
+            }
           }
           .text {
-            text-align: justify;
+            text-align: center;
+            font-family: $montserrat-font;
             padding: 1rem 0;
-          }
-          .button:hover {
-            background: #159baf;
           }
         }
       }

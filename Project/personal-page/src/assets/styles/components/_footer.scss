@@ -8,30 +8,30 @@ footer {
     font-size: 1.3rem;
     font-weight: 800;
   }
-}
 
-.pers-page {
-  font-size: 2rem;
-  font-weight: 1000;
-  color: $orange-red;
-}
-
-.social-network ul {
-  padding-left: 0;
-}
-
-.social-network li {
-  list-style-type: none;
-  color: $white;
-  font-size: 1.3rem;
-
-  &:hover i {
-    color: $color-text;
+  .pers-page {
+    font-size: 2rem;
+    font-weight: 1000;
+    color: $orange-red;
   }
 
-  span {
-    margin-left: 0.7rem;
-    font-size: 1rem;
+  .social-network ul {
+    padding-left: 0;
+  }
+
+  .social-network li {
+    list-style-type: none;
+    color: $white;
+    font-size: 1.3rem;
+
+    &:hover i {
+      color: $color-text;
+    }
+
+    span {
+      margin-left: 0.7rem;
+      font-size: 1rem;
+    }
   }
 }
 

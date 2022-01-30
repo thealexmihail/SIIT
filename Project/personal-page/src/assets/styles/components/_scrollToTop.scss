@@ -15,6 +15,10 @@
     background-color: #1f6cc7;
   }
 
+  &:focus {
+    box-shadow: none;
+  }
+
   i {
     color: $orange-red;
   }
